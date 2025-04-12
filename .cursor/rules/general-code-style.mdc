@@ -1,0 +1,108 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+ ---
+description: General code style guidelines emphasizing functional and immutable patterns
+globs: "*"
+alwaysApply: true
+---
+
+# General Code Style Guidelines
+
+## Core Programming Patterns
+
+### Functional Programming
+- Prefer pure functions that don't have side effects
+- Use immutable data structures by default
+- Avoid mutating state directly; create new instances instead
+- Utilize map, filter, reduce over imperative loops
+- Keep functions small and focused on a single task
+- Use composition over inheritance
+
+### Immutability
+- Use `const` by default, `let` only when necessary
+- Never use `var`
+- Use spread operators for object/array updates
+- Employ immutable data structures (e.g., Immutable.js, Immer) for complex state
+- Create new objects/arrays instead of modifying existing ones
+
+## Code Organization
+
+### Functions
+- Keep functions small and single-purpose
+- Maximum 20 lines per function as a general guideline
+- Use meaningful parameter and return type annotations
+- Avoid side effects in functions
+- Document complex logic with clear comments
+
+### Variables
+- Use descriptive, meaningful variable names
+- Prefer const declarations
+- Initialize variables at declaration when possible
+- Use TypeScript types/interfaces for complex data structures
+
+### Error Handling
+- Use typed error handling
+- Prefer Result/Either patterns over try/catch where appropriate
+- Handle errors explicitly, avoid silent failures
+- Log errors with meaningful context
+
+## Best Practices
+
+### Code Quality
+- Write self-documenting code
+- Add comments for complex business logic
+- Use TypeScript for type safety
+- Follow DRY (Don't Repeat Yourself) principles
+- Implement proper error handling
+
+### Testing
+- Write unit tests for pure functions
+- Test edge cases and error conditions
+- Use meaningful test descriptions
+- Follow AAA pattern (Arrange, Act, Assert)
+
+### Performance
+- Avoid unnecessary object creation
+- Use memoization for expensive computations
+- Consider performance implications of immutable data structures
+- Profile code when performance is critical
+
+## Example Patterns
+
+### ✅ Good
+```typescript
+// Immutable state update
+const newState = {
+    ...oldState,
+    property: newValue
+};
+
+// Pure function
+const calculateTotal = (items: Item[]): number =>
+    items.reduce((sum, item) => sum + item.price, 0);
+
+// Functional array operation
+const activeUsers = users.filter(user => user.isActive);
+```
+
+### ❌ Avoid
+```typescript
+// Mutating state directly
+state.property = newValue;
+
+// Impure function with side effects
+function processData(data) {
+    globalVariable = data;
+    // Side effects
+}
+
+// Imperative loop
+for (let i = 0; i < array.length; i++) {
+    // Manual iteration
+}
+```
+
+Remember: These guidelines promote maintainable, predictable, and bug-resistant code. While following functional and immutable patterns, always consider the specific needs of your project and team.
