@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, NzButtonModule, NzLayoutModule, NzMenuModule],
+  imports: [RouterModule, NzLayoutModule, NzMenuModule],
   selector: 'app-root',
   template: `
     <nz-layout class="app-layout">

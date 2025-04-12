@@ -1,10 +1,13 @@
 import { Route } from '@angular/router';
-import { homeRoutes } from '@chasing-ridges/home';
 
 export const appRoutes: Route[] = [
   {
     path: 'home',
-    children: homeRoutes,
+    loadChildren: () => import('@chasing-ridges/home').then(m => m.homeRoutes)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('@chasing-ridges/product-search').then(m => m.productSearchRoutes)
   },
   {
     path: '',
