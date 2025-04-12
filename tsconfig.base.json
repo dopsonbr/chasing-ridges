@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@chasing-ridges/home": ["libs/features/home/src/index.ts"],
+      "@chasing-ridges/product-search": [
+        "libs/features/product-search/src/index.ts"
+      ],
       "@chasing-ridges/products": ["libs/models/products/src/index.ts"]
     },
     "strict": true,
