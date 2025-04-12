@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@cr/products": ["libs/models/products/src/index.ts"]
+    },
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
