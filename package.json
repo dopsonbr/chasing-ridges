@@ -2,7 +2,12 @@
   "name": "@chasing-ridges/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~19.2.0",
