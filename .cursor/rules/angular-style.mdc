@@ -19,6 +19,7 @@ alwaysApply: true
 - Import dependencies directly in components
 - Utilize standalone directives and pipes
 - prefer on push change detection
+- prefer to use ant design components instead of creating new
 
 ```typescript
 // ✅ Good

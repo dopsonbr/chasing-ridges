@@ -16,9 +16,12 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/chasing-ridges/tsconfig.app.json",
         "assets": [
+          "apps/chasing-ridges/src/favicon.ico",
+          "apps/chasing-ridges/src/assets",
           {
             "glob": "**/*",
-            "input": "apps/chasing-ridges/public"
+            "input": "apps/chasing-ridges/public",
+            "output": "/"
           }
         ],
         "styles": ["apps/chasing-ridges/src/styles.css"],
