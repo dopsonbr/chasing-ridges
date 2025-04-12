@@ -9,7 +9,11 @@ import { RouterModule } from '@angular/router';
   imports: [CommonModule, NzButtonModule, RouterModule],
   template: `
     <div class="home-container">
-      <img src="/assets/chasing-ridges-logo.png" alt="Chasing Ridges Logo" class="logo">
+      <img 
+        src="/assets/chasing-ridges-logo.png" 
+        alt="Chasing Ridges Logo" 
+        class="logo"
+        data-testid="logo">
       <div class="actions">
         <button nz-button nzType="primary" nzSize="large" routerLink="/products">
           View Products
