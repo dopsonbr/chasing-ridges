@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cr/products": ["libs/models/products/src/index.ts"]
+      "@chasing-ridges/products": ["libs/models/products/src/index.ts"]
     },
     "strict": true,
     "noImplicitAny": true,
