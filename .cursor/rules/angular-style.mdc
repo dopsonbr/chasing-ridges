@@ -1,4 +1,9 @@
 ---
+description: use when creating or updating angular code
+globs: 
+alwaysApply: false
+---
+ ---
 description: Angular style guidelines focusing on modern practices including standalone components, signals, and reactive forms
 globs: "**/*.{ts,html}"
 alwaysApply: true
@@ -13,6 +18,9 @@ alwaysApply: true
 - Use standalone components for better tree-shaking
 - Import dependencies directly in components
 - Utilize standalone directives and pipes
+- prefer on push change detection
+- prefer to use ant design components instead of creating new
+- add relevant `data-testid` attributes to elements that can be interacted with
 
 ```typescript
 // ✅ Good
@@ -236,4 +244,4 @@ export class GlobalErrorHandler implements ErrorHandler {
 }
 ```
 
-Remember: These guidelines align with Angular's official documentation and best practices. Always consider the specific needs of your project while following these patterns. 
+Remember: These guidelines align with Angular's official documentation and best practices. Always consider the specific needs of your project while following these patterns.

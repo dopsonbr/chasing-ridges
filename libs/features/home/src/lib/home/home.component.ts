@@ -8,14 +8,19 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, NzButtonModule, RouterModule],
   template: `
-    <div class="home-container">
+    <div class="home-container" data-testid="home-container">
       <img 
         src="/assets/chasing-ridges-logo.png" 
         alt="Chasing Ridges Logo" 
         class="logo"
         data-testid="logo">
-      <div class="actions">
-        <button nz-button nzType="primary" nzSize="large" routerLink="/products">
+      <div class="actions" data-testid="actions-container">
+        <button 
+          nz-button 
+          nzType="primary" 
+          nzSize="large" 
+          routerLink="/products"
+          data-testid="view-products-button">
           View Products
         </button>
       </div>
