@@ -96,9 +96,12 @@ export class ProductsController {
     }
   };
 
-  getFeatured = async (_req: Request, res: Response): Promise<void> => {
+  getFeatured = async (req: Request, res: Response): Promise<void> => {
     try {
-      const products = await this.service.getFeatured();
+      // Parse and validate limit parameter
+      const limit = Math.max(1, parseInt(req.query.limit as string) || 3);
+      
+      const products = await this.service.getFeatured(limit);
       res.json(products);
     } catch (error) {
       console.error('Error getting featured products:', error);

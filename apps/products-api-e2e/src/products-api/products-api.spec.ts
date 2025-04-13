@@ -134,4 +134,36 @@ describe('Products API', () => {
       }
     });
   });
+
+  describe('GET /api/products/featured', () => {
+    it('should return a list of featured products with default limit of 3', async () => {
+      const response = await axios.get(`${API_URL}/api/products/featured`);
+      
+      expect(response.status).toBe(200);
+      expect(Array.isArray(response.data)).toBe(true);
+      expect(response.data.length).toBe(3);
+      
+      // Verify each product has required fields
+      response.data.forEach((product: Product) => {
+        expect(product.id).toBeDefined();
+        expect(product.name).toBeDefined();
+        expect(product.description).toBeDefined();
+        expect(product.price).toBeDefined();
+        expect(product.image).toBeDefined();
+        expect(product.category).toBeDefined();
+        expect(product.subCategory).toBeDefined();
+        expect(Array.isArray(product.tags)).toBe(true);
+        expect(product.createdAt).toBeDefined();
+        expect(product.updatedAt).toBeDefined();
+      });
+    });
+
+    it('should return 4 products when limit is set to 4', async () => {
+      const response = await axios.get(`${API_URL}/api/products/featured?limit=4`);
+      
+      expect(response.status).toBe(200);
+      expect(Array.isArray(response.data)).toBe(true);
+      expect(response.data.length).toBe(4);
+    });
+  });
 });

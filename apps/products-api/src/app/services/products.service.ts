@@ -31,12 +31,12 @@ export class ProductsService {
     return this.repository.delete(id);
   }
 
-  async getFeatured(): Promise<Product[]> {
+  async getFeatured(limit = 3): Promise<Product[]> {
     // Business logic for featured products:
-    // Get all products and select the top 6 most recently created
+    // Get all products and select the top N most recently created
     const { items } = await this.repository.findAll(1, 100);
     return items
       .sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime())
-      .slice(0, 6);
+      .slice(0, limit);
   }
 } 
