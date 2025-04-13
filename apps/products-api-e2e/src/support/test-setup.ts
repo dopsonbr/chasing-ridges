@@ -1,5 +1,16 @@
 /* eslint-disable */
 import axios from 'axios';
+import { ChildProcess } from 'child_process';
+
+declare global {
+  namespace NodeJS {
+    interface Global {
+      __API_PROCESS__: ChildProcess;
+    }
+  }
+}
+
+export {};
 
 module.exports = async function () {
   // Configure axios for tests to use.
