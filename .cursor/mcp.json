@@ -2,6 +2,9 @@
   "mcpServers": {
     "nx-mcp": {
       "url": "http://localhost:9726/sse"
+    },
+    "git-mcp": {
+      "url": "http://localhost:9725/sse"
     }
   }
 }
