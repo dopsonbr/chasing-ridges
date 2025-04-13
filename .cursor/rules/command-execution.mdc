@@ -1,0 +1,76 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Standards for command execution in the workspace, specifically around using npx and nx commands
+globs: "*"
+alwaysApply: true
+---
+
+# Command Execution Standards
+
+## Core Principles
+
+### Using `npx`
+- Use `npx` when executing package binaries that aren't directly related to the Nx workspace
+- Prefer `npx` for one-off package executions
+- Use `npx` when running tools that need the latest version from npm
+
+```bash
+# ✅ Good
+npx prettier --write .
+npx typescript-coverage-report
+npx license-checker
+
+# ❌ Avoid
+npm run prettier
+./node_modules/.bin/prettier --write .
+```
+
+### Using `nx`
+- Use `nx` for all workspace-related commands
+- Always use `nx` for the following operations:
+  - Building projects (`nx build`)
+  - Running tests (`nx test`)
+  - Serving applications (`nx serve`)
+  - Running e2e tests (`nx e2e`)
+  - Linting (`nx lint`)
+  - Running generators (`nx generate`)
+  - Analyzing project graphs (`nx graph`)
+
+```bash
+# ✅ Good
+nx build my-app
+nx test my-lib
+nx serve my-app
+nx e2e my-app-e2e
+nx lint my-lib
+nx affected:test
+nx graph
+
+# ❌ Avoid
+npm run build
+ng serve
+npm test
+```
+
+### Command Execution Best Practices
+- Use `nx affected` commands for CI/CD pipelines
+- Leverage `nx` caching capabilities
+- Use parallel execution with `nx run-many` when applicable
+- Take advantage of Nx computation caching
+
+```bash
+# ✅ Good
+nx affected:build
+nx run-many --target=test --all
+nx affected --target=lint --parallel=3
+
+# ❌ Avoid
+npm run build-all
+for dir in */; do npm test; done
+```
+
+Remember: These guidelines ensure consistent command execution across the workspace while taking full advantage of Nx's powerful capabilities and proper package management with npx.

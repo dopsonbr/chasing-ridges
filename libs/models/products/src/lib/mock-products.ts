@@ -11,7 +11,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Collars',
     createdAt: new Date('2024-01-15'),
-    updatedAt: new Date('2024-01-15')
+    updatedAt: new Date('2024-01-15'),
+    tags: ['leather', 'classic', 'durable', 'brass hardware', 'brown']
   },
   {
     id: 'f47ac10b-58cc-4372-a567-0e02b2c3d479',
@@ -22,7 +23,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Collars',
     createdAt: new Date('2024-01-16'),
-    updatedAt: new Date('2024-01-16')
+    updatedAt: new Date('2024-01-16'),
+    tags: ['reflective', 'safety', 'night visibility', 'high-visibility', 'protective']
   },
   {
     id: '7c9e6679-7425-40de-944b-e07fc1f90ae7',
@@ -33,7 +35,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Collars',
     createdAt: new Date('2024-01-17'),
-    updatedAt: new Date('2024-01-17')
+    updatedAt: new Date('2024-01-17'),
+    tags: ['nylon', 'lightweight', 'quick-release', 'adjustable', 'everyday']
   },
   {
     id: '6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b',
@@ -44,7 +47,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Collars',
     createdAt: new Date('2024-01-18'),
-    updatedAt: new Date('2024-01-18')
+    updatedAt: new Date('2024-01-18'),
+    tags: ['designer', 'patterned', 'stylish', 'fashionable', 'decorative']
   },
   {
     id: '3e7c3f6d-9be2-4aeb-b8c5-94015d5f5e8a',
@@ -55,7 +59,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Collars',
     createdAt: new Date('2024-01-19'),
-    updatedAt: new Date('2024-01-19')
+    updatedAt: new Date('2024-01-19'),
+    tags: ['padded', 'comfortable', 'premium', 'soft', 'sensitive']
   },
 
   // Dog Leashes
@@ -68,7 +73,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Leashes',
     createdAt: new Date('2024-01-20'),
-    updatedAt: new Date('2024-01-20')
+    updatedAt: new Date('2024-01-20'),
+    tags: ['leather', 'classic', '6ft', 'comfortable grip', 'durable']
   },
   {
     id: 'd290f1ee-6c54-4b01-90e6-d701748f0851',
@@ -79,7 +85,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Leashes',
     createdAt: new Date('2024-01-21'),
-    updatedAt: new Date('2024-01-21')
+    updatedAt: new Date('2024-01-21'),
+    tags: ['retractable', 'extendable', '16ft', 'brake system', 'adjustable']
   },
   {
     id: 'e8fd159b-57c4-4d36-9bd7-a59ca13057bb',
@@ -90,7 +97,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Leashes',
     createdAt: new Date('2024-01-22'),
-    updatedAt: new Date('2024-01-22')
+    updatedAt: new Date('2024-01-22'),
+    tags: ['reflective', 'training', 'double-handled', 'safety', 'control']
   },
   {
     id: 'a4a70900-24e1-4b8e-8b3f-2d8e36b7c3d2',
@@ -101,7 +109,8 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Leashes',
     createdAt: new Date('2024-01-23'),
-    updatedAt: new Date('2024-01-23')
+    updatedAt: new Date('2024-01-23'),
+    tags: ['rope', 'heavy-duty', 'mountain', 'active', 'strong']
   },
   {
     id: 'c1b94d5e-e8e4-4c3d-9e8a-b9c2f7d8e6f5',
@@ -112,6 +121,7 @@ export const mockProducts: Product[] = [
     category: 'Dog Accessories',
     subCategory: 'Leashes',
     createdAt: new Date('2024-01-24'),
-    updatedAt: new Date('2024-01-24')
+    updatedAt: new Date('2024-01-24'),
+    tags: ['hands-free', 'running', 'jogging', 'waist', 'athletic']
   }
 ]; 
