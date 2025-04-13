@@ -3,7 +3,23 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/chasing-ridges-e2e/src",
-  "implicitDependencies": ["chasing-ridges"],
   "// targets": "to see all targets run: nx show project chasing-ridges-e2e --web",
-  "targets": {}
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": ["{workspaceRoot}/dist/.playwright/apps/chasing-ridges-e2e"],
+      "options": {
+        "config": "apps/chasing-ridges-e2e/playwright.config.ts"
+      },
+      "dependsOn": ["^serve"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/chasing-ridges-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "implicitDependencies": ["chasing-ridges", "products-api"]
 }

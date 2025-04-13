@@ -10,6 +10,9 @@ router.post('/', productsController.create);
 // Get all products with optional pagination
 router.get('/', productsController.findAll);
 
+// Get featured products
+router.get('/featured', productsController.getFeatured);
+
 // Get a single product by id
 router.get('/:id', productsController.findOne);
 

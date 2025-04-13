@@ -1,0 +1,43 @@
+.product-page {
+  padding: 2rem;
+}
+
+.carousel-section {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.featured-product {
+  text-align: center;
+  padding: 1rem;
+}
+
+.featured-product img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}
+
+nz-card {
+  height: 100%;
+}
+
+[nz-card-cover] img {
+  height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+}

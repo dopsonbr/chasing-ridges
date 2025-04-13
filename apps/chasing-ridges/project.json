@@ -58,7 +58,8 @@
           "buildTarget": "chasing-ridges:build:production"
         },
         "development": {
-          "buildTarget": "chasing-ridges:build:development"
+          "buildTarget": "chasing-ridges:build:development",
+          "proxyConfig": "apps/chasing-ridges/proxy.conf.json"
         }
       },
       "defaultConfiguration": "development"

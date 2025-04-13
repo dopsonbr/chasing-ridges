@@ -1,1 +1,59 @@
-<p>ProductSearch works!</p>
+<div class="product-page">
+  <div class="carousel-section" data-testid="featured-carousel">
+    <nz-carousel [nzAutoPlay]="true" #carousel>
+      <div 
+        nz-carousel-content
+        *ngFor="let featuredProduct of featuredProducts"
+        data-testid="carousel-slide">
+        <div class="featured-product">
+          <img [src]="featuredProduct.image" [alt]="featuredProduct.name" data-testid="product-image">
+          <h3 data-testid="product-title">{{ featuredProduct.name }}</h3>
+          <p data-testid="product-price">${{ featuredProduct.price.toFixed(2) }}</p>
+        </div>
+      </div>
+    </nz-carousel>
+    <button 
+      nz-button 
+      class="carousel-nav prev" 
+      data-testid="carousel-prev"
+      (click)="prevSlide()">
+      Previous
+    </button>
+    <button 
+      nz-button 
+      class="carousel-nav next" 
+      data-testid="carousel-next"
+      (click)="nextSlide()">
+      Next
+    </button>
+  </div>
+
+  <div class="products-grid" data-testid="products-grid" nz-row [nzGutter]="[16, 16]">
+    <div 
+      nz-col 
+      [nzXs]="24" 
+      [nzSm]="12" 
+      [nzMd]="8" 
+      [nzLg]="6"
+      *ngFor="let product of products"
+      data-testid="product-card">
+      <nz-card [nzCover]="coverTemplate">
+        <h4 data-testid="product-title">{{ product.name }}</h4>
+        <p data-testid="product-price">${{ product.price.toFixed(2) }}</p>
+        <button 
+          nz-button 
+          nzType="primary"
+          data-testid="add-to-cart-button"
+          (click)="addToCart(product)">
+          Add to Cart
+        </button>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img 
+          [src]="product.image" 
+          [alt]="product.name"
+          data-testid="product-image">
+      </ng-template>
+    </div>
+  </div>
+</div>

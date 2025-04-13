@@ -7,11 +7,19 @@ import express from 'express';
 import cors from 'cors';
 import productsRoutes from './app/routes/products.routes';
 
+// use environment variables for host and port and sane defaults
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 const app = express();
 
+// Debug middleware
+app.use((req, _res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
+// Middleware
 app.use(cors());
 app.use(express.json());
 

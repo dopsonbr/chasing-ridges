@@ -8,4 +8,5 @@ export interface Product {
   readonly subCategory: string;
   readonly createdAt: Date;
   readonly updatedAt: Date;
+  readonly tags: string[];
 }

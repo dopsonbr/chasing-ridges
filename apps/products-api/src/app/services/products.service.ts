@@ -85,4 +85,19 @@ export class ProductsService {
     this.products.splice(index, 1);
     return true;
   }
+
+  async getFeatured(limit?: number): Promise<Product[]> {
+    // For now, we'll consider the most recently added products as featured
+    // In a real application, you might have a 'featured' flag or more complex logic
+    console.log('Current products:', this.products);
+    console.log('Products length:', this.products.length);
+    
+    const products = [...this.products].reverse(); // Most recent products are at the end
+    console.log('Reversed products:', products);
+    
+    const result = limit ? products.slice(0, limit) : products;
+    console.log('Result:', result);
+    
+    return result;
+  }
 } 

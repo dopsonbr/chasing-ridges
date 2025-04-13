@@ -81,4 +81,19 @@ export class ProductsController {
       res.status(500).json({ message: 'Internal server error' });
     }
   };
+
+  getFeatured = async (req: Request, res: Response): Promise<void> => {
+    try {
+      console.log('getFeatured called');
+      console.log('Query params:', req.query);
+      const limit = req.query.limit ? parseInt(req.query.limit as string) : undefined;
+      console.log('Limit:', limit);
+      const products = await this.productsService.getFeatured(limit);
+      console.log('Products returned:', products);
+      res.status(200).json(products);
+    } catch (error) {
+      console.error('Error getting featured products:', error);
+      res.status(500).json({ message: 'Internal server error' });
+    }
+  };
 } 
