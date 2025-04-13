@@ -1,0 +1,46 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Waterproof collar base -->
+  <path d="M150,250 C150,230 650,230 650,250 C650,270 650,330 650,350 C650,370 150,370 150,350 C150,330 150,270 150,250 Z" fill="#1A5653"/>
+  
+  <!-- Water-resistant texture pattern -->
+  <pattern id="waterproof-texture" patternUnits="userSpaceOnUse" width="20" height="20">
+    <path d="M0,10 L20,10 M10,0 L10,20" stroke="#134240" stroke-width="0.5"/>
+    <path d="M5,5 L15,15 M15,5 L5,15" stroke="#134240" stroke-width="0.5"/>
+  </pattern>
+  <path d="M180,240 C180,235 620,235 620,240 C620,245 620,245 620,250 C620,255 180,255 180,250 C180,245 180,245 180,240 Z" fill="url(#waterproof-texture)"/>
+  <path d="M180,350 C180,345 620,345 620,350 C620,355 620,355 620,360 C620,365 180,365 180,360 C180,355 180,355 180,350 Z" fill="url(#waterproof-texture)"/>
+  
+  <!-- Adventure design elements - mountains and trees -->
+  <g id="adventure-pattern">
+    <path d="M200,310 L220,280 L240,310" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M250,310 L270,270 L290,310" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M300,310 L320,280 L340,310" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M350,310 L370,275 L390,310" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M400,310 L420,280 L440,310" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M450,310 L470,270 L490,310" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    
+    <!-- Tree symbols -->
+    <path d="M225,300 L225,310 M220,305 L230,305" stroke="#9ACD32" stroke-width="2"/>
+    <path d="M275,300 L275,310 M270,305 L280,305" stroke="#9ACD32" stroke-width="2"/>
+    <path d="M325,300 L325,310 M320,305 L330,305" stroke="#9ACD32" stroke-width="2"/>
+    <path d="M375,300 L375,310 M370,305 L380,305" stroke="#9ACD32" stroke-width="2"/>
+    <path d="M425,300 L425,310 M420,305 L430,305" stroke="#9ACD32" stroke-width="2"/>
+    <path d="M475,300 L475,310 M470,305 L480,305" stroke="#9ACD32" stroke-width="2"/>
+  </g>
+  
+  <!-- Rugged buckle design -->
+  <rect x="520" y="250" width="80" height="100" rx="5" fill="#2D3E40"/>
+  <rect x="535" y="265" width="50" height="70" rx="3" fill="#1A5653"/>
+  <circle cx="560" cy="300" r="15" fill="#2D3E40"/>
+  <circle cx="560" cy="300" r="8" fill="#1A5653"/>
+  
+  <!-- Water-resistant branding -->
+  <text x="360" y="310" font-family="Arial" font-weight="bold" font-size="20" text-anchor="middle" fill="#FFFFFF">WATERPROOF</text>
+  
+  <!-- Product name -->
+  <text x="400" y="450" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Waterproof Adventure Collar</text>
+  <text x="400" y="480" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Odor-resistant, designed for outdoor adventures</text>
+</svg>

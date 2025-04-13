@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Collar base - navy blue nylon -->
+  <path d="M150,250 C150,230 650,230 650,250 C650,270 650,330 650,350 C650,370 150,370 150,350 C150,330 150,270 150,250 Z" fill="#1D3461"/>
+  
+  <!-- Collar edges -->
+  <path d="M170,240 C170,235 630,235 630,240 C630,245 630,245 630,250 C630,255 170,255 170,250 C170,245 170,245 170,240 Z" fill="#1D3461" stroke="#FFFFFF" stroke-width="1"/>
+  <path d="M170,350 C170,345 630,345 630,350 C630,355 630,355 630,360 C630,365 170,365 170,360 C170,355 170,355 170,350 Z" fill="#1D3461" stroke="#FFFFFF" stroke-width="1"/>
+  
+  <!-- Embroidered name section -->
+  <rect x="200" y="270" width="300" height="60" rx="5" fill="#1D3461" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Embroidered text - custom name -->
+  <text x="350" y="305" font-family="Brush Script MT, cursive" font-size="32" text-anchor="middle" fill="#F1D302" font-weight="bold">BUDDY</text>
+  <text x="350" y="325" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF">(555) 123-4567</text>
+  
+  <!-- Embroidered paw prints around the name -->
+  <g id="paw-print" fill="#F1D302">
+    <circle cx="0" cy="-5" r="4"/>
+    <circle cx="-5" cy="5" r="4"/>
+    <circle cx="5" cy="5" r="4"/>
+    <ellipse cx="0" cy="10" rx="6" ry="5"/>
+  </g>
+  
+  <use href="#paw-print" x="180" y="300" transform="scale(0.8)"/>
+  <use href="#paw-print" x="520" y="300" transform="scale(0.8)"/>
+  
+  <!-- Metal D-ring -->
+  <circle cx="550" cy="300" r="20" fill="none" stroke="#D0D0D0" stroke-width="5"/>
+  
+  <!-- Adjustable buckle -->
+  <rect x="580" y="270" width="40" height="60" rx="5" fill="#D0D0D0"/>
+  <rect x="590" y="280" width="20" height="40" rx="2" fill="#1D3461"/>
+  
+  <!-- Product name -->
+  <text x="400" y="450" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Personalized Embroidered Collar</text>
+  <text x="400" y="480" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Custom embroidered with name and phone number</text>
+</svg>

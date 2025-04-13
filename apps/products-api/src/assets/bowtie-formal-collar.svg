@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Formal collar base - black -->
+  <path d="M150,250 C150,230 650,230 650,250 C650,270 650,330 650,350 C650,370 150,370 150,350 C150,330 150,270 150,250 Z" fill="#222222"/>
+  
+  <!-- Collar texture - satin-like -->
+  <path d="M170,240 C170,235 630,235 630,240 C630,245 630,245 630,250 C630,255 170,255 170,250 C170,245 170,245 170,240 Z" fill="#333333"/>
+  <path d="M170,350 C170,345 630,345 630,350 C630,355 630,355 630,360 C630,365 170,365 170,360 C170,355 170,355 170,350 Z" fill="#333333"/>
+  
+  <!-- Formal bowtie attachment -->
+  <g id="bowtie" transform="translate(350, 300)">
+    <!-- Center knot -->
+    <rect x="-10" y="-10" width="20" height="20" rx="2" fill="#D00000"/>
+    
+    <!-- Left side of bow -->
+    <path d="M-10,-10 C-40,-20 -70,-5 -40,0 C-70,5 -40,20 -10,10 Z" fill="#D00000"/>
+    
+    <!-- Right side of bow -->
+    <path d="M10,-10 C40,-20 70,-5 40,0 C70,5 40,20 10,10 Z" fill="#D00000"/>
+    
+    <!-- Small shadow details -->
+    <path d="M-10,-5 C-30,-10 -50,-5 -40,0" fill="none" stroke="#AA0000" stroke-width="2"/>
+    <path d="M-10,5 C-30,10 -50,5 -40,0" fill="none" stroke="#AA0000" stroke-width="2"/>
+    <path d="M10,-5 C30,-10 50,-5 40,0" fill="none" stroke="#AA0000" stroke-width="2"/>
+    <path d="M10,5 C30,10 50,5 40,0" fill="none" stroke="#AA0000" stroke-width="2"/>
+  </g>
+  
+  <!-- Removable indicator - dotted line around bowtie -->
+  <circle cx="350" cy="300" r="50" fill="none" stroke="#AAAAAA" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="350" cy="230" font-family="Arial" font-size="12" text-anchor="middle" fill="#AAAAAA">REMOVABLE</text>
+  
+  <!-- Elegant silver buckle -->
+  <rect x="580" y="260" width="40" height="80" rx="5" fill="#C0C0C0"/>
+  <rect x="590" y="275" width="20" height="50" rx="2" fill="#222222"/>
+  
+  <!-- Adjustment holes -->
+  <circle cx="200" cy="300" r="5" fill="#333333" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="240" cy="300" r="5" fill="#333333" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="280" cy="300" r="5" fill="#333333" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="420" cy="300" r="5" fill="#333333" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="460" cy="300" r="5" fill="#333333" stroke="#C0C0C0" stroke-width="1"/>
+  <circle cx="500" cy="300" r="5" fill="#333333" stroke="#C0C0C0" stroke-width="1"/>
+  
+  <!-- Product name -->
+  <text x="400" y="450" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Bowtie Formal Collar</text>
+  <text x="400" y="480" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Elegant collar with removable bowtie accessory</text>
+</svg>

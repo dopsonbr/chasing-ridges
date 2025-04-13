@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Main handle -->
+  <path d="M400,100 C350,100 325,140 350,180 C375,220 425,220 450,180 C475,140 450,100 400,100" fill="#222222"/>
+  <path d="M400,110 C360,110 335,140 355,175 C375,210 425,210 445,175 C465,140 440,110 400,110" fill="#444444"/>
+  
+  <!-- Attachment point with tangle-free swivel -->
+  <circle cx="400" cy="180" r="15" fill="#D0D0D0"/>
+  <circle cx="400" cy="180" r="8" fill="#222222"/>
+  
+  <!-- Tangle-free swivel mechanism -->
+  <path d="M400,195 L400,220" stroke="#D0D0D0" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="400" cy="230" r="12" fill="#D0D0D0"/>
+  <circle cx="400" cy="230" r="8" fill="#AAAAAA" stroke="#D0D0D0" stroke-width="1"/>
+  <text x="400" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Tangle-Free Swivel</text>
+  
+  <!-- Two leash split indicator -->
+  <path d="M400,242 L300,350 M400,242 L500,350" fill="none" stroke="#222222" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- First dog leash -->
+  <path d="M300,350 L250,450" fill="none" stroke="#2E5EAA" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="250" cy="450" r="15" fill="#D0D0D0"/>
+  <circle cx="250" cy="450" r="10" fill="#2E5EAA"/>
+  
+  <!-- First dog silhouette -->
+  <g transform="translate(200, 480)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="40" ry="20" fill="#666666"/>
+    <!-- Head -->
+    <circle cx="-30" cy="0" r="15" fill="#666666"/>
+    <!-- Ears -->
+    <path d="M-40,-5 L-50,-15 L-35,-10 Z" fill="#666666"/>
+    <path d="M-20,-5 L-15,-15 L-25,-10 Z" fill="#666666"/>
+    <!-- Tail -->
+    <path d="M35,0 C45,10 50,0 55,-10" fill="none" stroke="#666666" stroke-width="5" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M-20,15 L-25,30 M0,15 L-5,30 M20,15 L15,30 M30,10 L35,25" fill="none" stroke="#666666" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Second dog leash -->
+  <path d="M500,350 L550,450" fill="none" stroke="#1D3461" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="550" cy="450" r="15" fill="#D0D0D0"/>
+  <circle cx="550" cy="450" r="10" fill="#1D3461"/>
+  
+  <!-- Second dog silhouette - different breed -->
+  <g transform="translate(600, 480)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="30" ry="15" fill="#8B4513"/>
+    <!-- Head -->
+    <circle cx="-25" cy="0" r="12" fill="#8B4513"/>
+    <!-- Ears -->
+    <ellipse cx="-30" cy="-10" rx="8" ry="5" fill="#8B4513"/>
+    <ellipse cx="-20" cy="-10" rx="8" ry="5" fill="#8B4513"/>
+    <!-- Tail -->
+    <path d="M25,0 C35,-10 45,-5 40,5" fill="none" stroke="#8B4513" stroke-width="4" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M-15,10 L-20,25 M0,10 L-5,25 M15,10 L10,25 M25,5 L30,20" fill="none" stroke="#8B4513" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Product name -->
+  <text x="400" y="540" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Double Dog Walking Leash</text>
+  <text x="400" y="570" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Tangle-free design for walking two dogs</text>
+</svg>

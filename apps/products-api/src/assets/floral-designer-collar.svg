@@ -1,0 +1,59 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Collar base - light fabric -->
+  <path d="M150,250 C150,230 650,230 650,250 C650,270 650,330 650,350 C650,370 150,370 150,350 C150,330 150,270 150,250 Z" fill="#FBF7F4"/>
+  
+  <!-- Floral pattern elements -->
+  <g id="floral-pattern">
+    <!-- Repeating flowers -->
+    <g id="flower1" transform="translate(200, 300)">
+      <circle cx="0" cy="0" r="15" fill="#FF6B6B"/>
+      <circle cx="0" cy="0" r="8" fill="#FFC6AC"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(0)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(72)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(144)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(216)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(288)"/>
+    </g>
+    
+    <!-- Clone and position flowers across the collar -->
+    <use href="#flower1" x="0" y="0"/>
+    <use href="#flower1" x="100" y="0"/>
+    <use href="#flower1" x="200" y="0"/>
+    <use href="#flower1" x="300" y="0"/>
+    <use href="#flower1" x="50" y="-30"/>
+    <use href="#flower1" x="150" y="-30"/>
+    <use href="#flower1" x="250" y="-30"/>
+    <use href="#flower1" x="350" y="-30"/>
+    
+    <!-- Some smaller flowers -->
+    <g id="smallFlower" transform="translate(230, 315) scale(0.6)">
+      <circle cx="0" cy="0" r="15" fill="#9C6ADE"/>
+      <circle cx="0" cy="0" r="8" fill="#F3F798"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(0)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(72)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(144)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(216)"/>
+      <path d="M0,-25 Q10,-15 0,-5 Q-10,-15 0,-25" fill="#4CAF50" transform="rotate(288)"/>
+    </g>
+    
+    <use href="#smallFlower" x="0" y="0"/>
+    <use href="#smallFlower" x="75" y="-15"/>
+    <use href="#smallFlower" x="175" y="-15"/>
+    <use href="#smallFlower" x="275" y="-15"/>
+  </g>
+  
+  <!-- Collar edges -->
+  <path d="M150,250 C150,230 650,230 650,250" fill="none" stroke="#DADED4" stroke-width="3"/>
+  <path d="M150,350 C150,370 650,370 650,350" fill="none" stroke="#DADED4" stroke-width="3"/>
+  
+  <!-- Buckle - elegant gold -->
+  <rect x="550" y="250" width="60" height="100" rx="10" fill="#D4AF37"/>
+  <circle cx="580" cy="300" r="15" fill="#F5F5DC"/>
+  
+  <!-- Product name -->
+  <text x="400" y="450" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Floral Pattern Designer Collar</text>
+  <text x="400" y="480" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Stylish cotton collar with beautiful floral pattern</text>
+</svg>

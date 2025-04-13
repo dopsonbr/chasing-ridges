@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Handle -->
+  <path d="M400,100 C350,100 330,130 350,160 C370,190 430,190 450,160 C470,130 450,100 400,100" fill="#1D3461"/>
+  <path d="M400,110 C360,110 340,135 360,160 C375,185 425,185 440,160 C460,135 440,110 400,110" fill="#2E5EAA"/>
+  
+  <!-- Padded handle detail -->
+  <path d="M400,115 C365,115 350,135 365,155" fill="none" stroke="#CCCCCC" stroke-width="3" stroke-dasharray="2,2"/>
+  <path d="M400,115 C435,115 450,135 435,155" fill="none" stroke="#CCCCCC" stroke-width="3" stroke-dasharray="2,2"/>
+  <text x="400" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF">PADDED</text>
+  
+  <!-- Bungee leash with spring coil visualization -->
+  <!-- Section 1 - regular -->
+  <path d="M400,160 L400,200" stroke="#1D3461" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Section 2 - bungee visualized as spring coils -->
+  <path d="M400,200 
+    L390,210 L410,220 L390,230 L410,240 L390,250 L410,260 
+    L390,270 L410,280 L390,290 L410,300 L390,310 L410,320 
+    L400,330" 
+    fill="none" stroke="#E63946" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Bungee expansion indicator arrows -->
+  <path d="M370,240 L430,240" stroke="#333333" stroke-width="1"/>
+  <path d="M370,240 L380,235 M370,240 L380,245" stroke="#333333" stroke-width="1"/>
+  <path d="M430,240 L420,235 M430,240 L420,245" stroke="#333333" stroke-width="1"/>
+  <text x="340" y="245" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Expands</text>
+  
+  <path d="M370,290 L430,290" stroke="#333333" stroke-width="1"/>
+  <path d="M370,290 L380,285 M370,290 L380,295" stroke="#333333" stroke-width="1"/>
+  <path d="M430,290 L420,285 M430,290 L420,295" stroke="#333333" stroke-width="1"/>
+  <text x="460" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="#333333">Absorbs shock</text>
+  
+  <!-- Section 3 - regular -->
+  <path d="M400,330 L400,450" stroke="#1D3461" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Shock absorption graphic -->
+  <g transform="translate(500, 260)">
+    <!-- Impact visualization -->
+    <path d="M0,0 L20,-20 L40,0 L60,-20 L80,0" fill="none" stroke="#333333" stroke-width="2"/>
+    <!-- Absorption wave -->
+    <path d="M0,30 C20,10 40,50 60,30 C80,10 100,50 120,30" fill="none" stroke="#E63946" stroke-width="3"/>
+    <!-- Arrows -->
+    <path d="M60,-30 L60,10" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="3,3"/>
+    <path d="M60,-30 L55,-20 M60,-30 L65,-20" stroke="#333333" stroke-width="2"/>
+    <path d="M60,40 L55,30 M60,40 L65,30" stroke="#333333" stroke-width="2"/>
+  </g>
+  
+  <!-- Clasp -->
+  <circle cx="400" cy="450" r="15" fill="#D0D0D0"/>
+  <circle cx="400" cy="450" r="8" fill="#AAAAAA"/>
+  <path d="M400,465 L400,485" stroke="#D0D0D0" stroke-width="8"/>
+  <path d="M390,485 L410,485 L410,495 L390,495 Z" fill="#D0D0D0"/>
+  
+  <!-- Product name -->
+  <text x="400" y="535" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Shock-Absorbing Bungee Leash</text>
+  <text x="400" y="565" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Reduces pulling strain for comfortable walks</text>
+</svg>

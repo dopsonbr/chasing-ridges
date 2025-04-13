@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": "col-001",
+      "name": "Classic Leather Dog Collar",
+      "description": "Handcrafted genuine leather dog collar with brass hardware for durability and style.",
+      "price": 29.99,
+      "image": "classic-leather-collar.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Collars",
+      "createdAt": "2024-09-15T08:30:00Z",
+      "updatedAt": "2025-01-10T14:45:22Z",
+      "tags": ["leather", "classic", "durable", "adjustable", "brown"]
+    },
+    {
+      "id": "col-002",
+      "name": "Reflective Safety Collar",
+      "description": "High-visibility reflective collar with quick-release buckle for nighttime safety and everyday use.",
+      "price": 19.99,
+      "image": "reflective-safety-collar.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Collars",
+      "createdAt": "2024-08-22T11:15:30Z",
+      "updatedAt": "2025-02-05T09:20:15Z",
+      "tags": ["reflective", "safety", "nylon", "adjustable", "night"]
+    },
+    {
+      "id": "col-003",
+      "name": "Floral Pattern Designer Collar",
+      "description": "Stylish cotton collar with beautiful floral pattern, perfect for fashionable pups.",
+      "price": 24.95,
+      "image": "floral-designer-collar.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Collars",
+      "createdAt": "2024-10-05T15:40:00Z",
+      "updatedAt": "2025-03-01T10:35:45Z",
+      "tags": ["designer", "floral", "fashion", "cotton", "stylish"]
+    },
+    {
+      "id": "col-004",
+      "name": "Waterproof Adventure Collar",
+      "description": "Odor-resistant, waterproof collar designed for outdoor adventures and active dogs.",
+      "price": 34.50,
+      "image": "waterproof-adventure-collar.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Collars",
+      "createdAt": "2024-07-18T09:50:20Z",
+      "updatedAt": "2025-01-22T16:30:10Z",
+      "tags": ["waterproof", "adventure", "odor-resistant", "durable", "outdoor"]
+    },
+    {
+      "id": "col-005",
+      "name": "Personalized Embroidered Collar",
+      "description": "Custom embroidered nylon collar with your dog's name and your phone number for identification.",
+      "price": 32.99,
+      "image": "personalized-embroidered-collar.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Collars",
+      "createdAt": "2024-09-30T13:25:45Z",
+      "updatedAt": "2025-02-18T11:15:30Z",
+      "tags": ["personalized", "embroidered", "custom", "nylon", "identification"]
+    },
+    {
+      "id": "col-006",
+      "name": "Bowtie Formal Collar",
+      "description": "Elegant collar with removable bowtie accessory, perfect for special occasions and formal events.",
+      "price": 27.95,
+      "image": "bowtie-formal-collar.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Collars",
+      "createdAt": "2024-08-05T10:10:15Z",
+      "updatedAt": "2025-03-10T14:20:40Z",
+      "tags": ["bowtie", "formal", "elegant", "special occasion", "removable"]
+    },
+    {
+      "id": "leash-001",
+      "name": "Premium Leather Leash",
+      "description": "Matching premium leather leash with comfortable padded handle for extended walks.",
+      "price": 39.99,
+      "image": "premium-leather-leash.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Leashes",
+      "createdAt": "2024-09-15T08:35:00Z",
+      "updatedAt": "2025-01-10T14:50:22Z",
+      "tags": ["leather", "premium", "padded handle", "durable", "comfortable"]
+    },
+    {
+      "id": "leash-002",
+      "name": "Retractable Training Leash",
+      "description": "16-foot retractable leash with one-button lock mechanism for training and variable distance control.",
+      "price": 24.95,
+      "image": "retractable-training-leash.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Leashes",
+      "createdAt": "2024-10-01T16:20:30Z",
+      "updatedAt": "2025-02-12T13:40:15Z",
+      "tags": ["retractable", "training", "adjustable length", "control", "durable"]
+    },
+    {
+      "id": "leash-003",
+      "name": "Reflective Running Leash",
+      "description": "Hands-free running leash with reflective stitching and waist attachment for active dog owners.",
+      "price": 32.50,
+      "image": "reflective-running-leash.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Leashes",
+      "createdAt": "2024-08-10T11:05:45Z",
+      "updatedAt": "2025-01-25T09:15:30Z",
+      "tags": ["running", "hands-free", "reflective", "waist", "active"]
+    },
+    {
+      "id": "leash-004",
+      "name": "Double Dog Walking Leash",
+      "description": "Dual-dog leash with tangle-free design, perfect for walking two dogs simultaneously.",
+      "price": 36.99,
+      "image": "double-dog-walking-leash.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Leashes",
+      "createdAt": "2024-07-25T14:30:20Z",
+      "updatedAt": "2025-02-28T10:50:15Z",
+      "tags": ["double", "dual-dog", "tangle-free", "multi-pet", "durable"]
+    },
+    {
+      "id": "leash-005",
+      "name": "Shock-Absorbing Bungee Leash",
+      "description": "Elastic bungee leash that reduces pulling strain and provides shock absorption for comfortable walks.",
+      "price": 28.95,
+      "image": "shock-absorbing-bungee-leash.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Leashes",
+      "createdAt": "2024-09-20T12:15:00Z",
+      "updatedAt": "2025-03-05T15:25:45Z",
+      "tags": ["bungee", "shock-absorbing", "elastic", "comfortable", "anti-pull"]
+    },
+    {
+      "id": "leash-006",
+      "name": "Heavy-Duty Training Lead",
+      "description": "Extra-long 30-foot training lead for recall training and outdoor exploration in open spaces.",
+      "price": 22.99,
+      "image": "heavy-duty-training-lead.jpg",
+      "category": "Dog Accessories",
+      "subCategory": "Leashes",
+      "createdAt": "2024-08-15T09:45:30Z",
+      "updatedAt": "2025-01-30T11:10:20Z",
+      "tags": ["training", "long lead", "recall", "heavy-duty", "outdoor"]
+    }
+  ]
+}

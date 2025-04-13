@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Brown leather collar -->
+  <path d="M150,250 C150,230 650,230 650,250 C650,270 650,330 650,350 C650,370 150,370 150,350 C150,330 150,270 150,250 Z" fill="#8B4513"/>
+  
+  <!-- Leather texture -->
+  <path d="M180,240 C180,235 620,235 620,240 C620,245 620,245 620,250 C620,255 180,255 180,250 C180,245 180,245 180,240 Z" fill="#A0522D" opacity="0.5"/>
+  <path d="M180,350 C180,345 620,345 620,350 C620,355 620,355 620,360 C620,365 180,365 180,360 C180,355 180,355 180,350 Z" fill="#A0522D" opacity="0.5"/>
+  
+  <!-- Brass buckle -->
+  <rect x="520" y="248" width="80" height="104" rx="10" fill="#CD7F32"/>
+  <rect x="535" y="263" width="50" height="74" rx="5" fill="#8B4513"/>
+  
+  <!-- Holes for adjustment -->
+  <circle cx="250" cy="300" r="8" fill="#5D2906"/>
+  <circle cx="300" cy="300" r="8" fill="#5D2906"/>
+  <circle cx="350" cy="300" r="8" fill="#5D2906"/>
+  <circle cx="400" cy="300" r="8" fill="#5D2906"/>
+  <circle cx="450" cy="300" r="8" fill="#5D2906"/>
+  
+  <!-- Stitching details -->
+  <path d="M180,260 L620,260" stroke="#A0522D" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M180,340 L620,340" stroke="#A0522D" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Product name -->
+  <text x="400" y="450" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Classic Leather Dog Collar</text>
+  <text x="400" y="480" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Handcrafted genuine leather with brass hardware</text>
+</svg>

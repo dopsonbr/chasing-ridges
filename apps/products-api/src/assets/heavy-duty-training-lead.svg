@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Handle loop -->
+  <path d="M200,150 C180,130 180,170 200,150" fill="#2E5EAA" stroke="#1D3461" stroke-width="4"/>
+  
+  <!-- Handle reinforcement -->
+  <path d="M200,150 C210,150 210,150 220,150" stroke="#1D3461" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Long training lead - coiled for display -->
+  <path d="M220,150 
+        C250,150 270,160 300,140
+        C330,120 350,100 380,120
+        C410,140 430,160 460,140
+        C490,120 510,100 540,120
+        C570,140 590,160 620,140
+        C650,120 670,140 700,160
+        
+        C730,180 730,220 700,240
+        C670,260 650,280 620,260
+        C590,240 570,220 540,240
+        C510,260 490,280 460,260
+        C430,240 410,220 380,240
+        C350,260 330,280 300,260
+        C270,240 250,240 220,250"
+        fill="none" stroke="#2E5EAA" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Length indicator -->
+  <path d="M350,200 L650,200" stroke="#333333" stroke-width="1" stroke-dasharray="5,5"/>
+  <path d="M350,200 L360,195 M350,200 L360,205" stroke="#333333" stroke-width="1"/>
+  <path d="M650,200 L640,195 M650,200 L640,205" stroke="#333333" stroke-width="1"/>
+  <text x="500" y="190" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#333333">30 FEET</text>
+  
+  <!-- Heavy duty label -->
+  <rect x="400" y="120" width="150" height="40" rx="20" fill="#E63946"/>
+  <text x="475" y="145" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFFFFF">HEAVY DUTY</text>
+  
+  <!-- Clasp at end -->
+  <circle cx="220" cy="250" r="15" fill="#D0D0D0"/>
+  <path d="M205,250 L235,250 M220,235 L220,265" stroke="#AAAAAA" stroke-width="3"/>
+  
+  <!-- Training visualization -->
+  <g transform="translate(350, 350)">
+    <!-- Dog silhouette -->
+    <ellipse cx="0" cy="0" rx="40" ry="20" fill="#666666"/>
+    <circle cx="-30" cy="0" r="15" fill="#666666"/>
+    <path d="M-40,-5 L-50,-15 L-35,-10 Z" fill="#666666"/>
+    <path d="M-20,-5 L-15,-15 L-25,-10 Z" fill="#666666"/>
+    <path d="M35,0 C45,10 50,0 55,-10" fill="none" stroke="#666666" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-20,15 L-25,30 M0,15 L-5,30 M20,15 L15,30 M30,10 L35,25" fill="none" stroke="#666666" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Person silhouette -->
+    <g transform="translate(150, -10)">
+      <circle cx="0" cy="-30" r="15" fill="#333333"/> <!-- head -->
+      <path d="M0,-15 L0,20" stroke="#333333" stroke-width="8"/> <!-- body -->
+      <path d="M0,0 L-20,15" stroke="#333333" stroke-width="6"/> <!-- arm -->
+      <path d="M0,20 L-15,50" stroke="#333333" stroke-width="6"/> <!-- leg -->
+      <path d="M0,20 L15,50" stroke="#333333" stroke-width="6"/> <!-- leg -->
+    </g>
+    
+    <!-- Training lead connecting -->
+    <path d="M-30,0 C-60,-30 -90,0 -120,-20 C-150,-40 -180,-20 -180,-20" stroke="#2E5EAA" stroke-width="4" stroke-dasharray="5,5"/>
+    
+    <!-- Distance indication -->
+    <path d="M-30,50 L150,50" stroke="#333333" stroke-width="1" stroke-dasharray="10,5"/>
+    <path d="M-30,50 L-20,45 M-30,50 L-20,55" stroke="#333333" stroke-width="1"/>
+    <path d="M150,50 L140,45 M150,50 L140,55" stroke="#333333" stroke-width="1"/>
+    <text x="60" y="70" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">Safe Distance For Training</text>
+  </g>
+  
+  <!-- Product name -->
+  <text x="400" y="525" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Heavy-Duty Training Lead</text>
+  <text x="400" y="555" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Extra-long 30-foot for recall training</text>
+</svg>

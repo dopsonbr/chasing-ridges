@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  
+  <!-- Waist belt -->
+  <ellipse cx="400" cy="150" rx="150" ry="50" fill="#1D3461"/>
+  <ellipse cx="400" cy="150" rx="140" ry="40" fill="#2E5EAA"/>
+  
+  <!-- Reflective strips on belt -->
+  <ellipse cx="400" cy="150" rx="145" ry="45" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="15,10"/>
+  <text x="400" y="155" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFFFFF">REFLECTIVE</text>
+  
+  <!-- Belt buckle -->
+  <rect x="530" y="140" width="30" height="20" rx="3" fill="#D0D0D0"/>
+  <rect x="540" y="140" width="10" height="20" fill="#AAAAAA"/>
+  
+  <!-- Leash attachment to belt -->
+  <rect x="385" y="180" width="30" height="20" rx="5" fill="#D0D0D0"/>
+  <circle cx="400" cy="190" r="5" fill="#1D3461"/>
+  
+  <!-- Leash - bungee style with reflective stitching -->
+  <path d="M400,200 C400,250 450,300 400,350 C350,400 450,450 400,500" fill="none" stroke="#1D3461" stroke-width="15" stroke-linecap="round"/>
+  <path d="M400,200 C400,250 450,300 400,350 C350,400 450,450 400,500" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="5,10" stroke-linecap="round"/>
+  
+  <!-- Hands-free indicator -->
+  <g transform="translate(250, 150)">
+    <!-- Hand silhouette -->
+    <path d="M0,0 C-10,0 -15,10 -15,20 C-15,30 -10,40 0,40 C10,40 15,30 15,20 C15,10 10,0 0,0" fill="#333333"/>
+    <!-- No symbol -->
+    <circle cx="0" cy="20" r="25" fill="none" stroke="#E63946" stroke-width="3"/>
+    <line x1="-18" y1="38" x2="18" y2="2" stroke="#E63946" stroke-width="3"/>
+  </g>
+  <text x="250" y="200" font-family="Arial" font-size="14" text-anchor="middle" fill="#333333">HANDS-FREE</text>
+  
+  <!-- Running figure silhouette -->
+  <path d="M600,130 C610,120 620,130 615,140 C625,145 620,160 610,155 C605,170 590,165 595,155 C585,150 590,135 600,130" fill="#333333"/> <!-- head and torso -->
+  <path d="M605,155 L620,190 L640,170" fill="none" stroke="#333333" stroke-width="5"/> <!-- arm -->
+  <path d="M605,155 L590,180 L570,160" fill="none" stroke="#333333" stroke-width="5"/> <!-- arm -->
+  <path d="M610,155 L600,200 L620,230" fill="none" stroke="#333333" stroke-width="5"/> <!-- leg -->
+  <path d="M610,155 L630,210 L610,240" fill="none" stroke="#333333" stroke-width="5"/> <!-- leg -->
+  
+  <!-- Clasp at end -->
+  <circle cx="400" cy="500" r="20" fill="#D0D0D0"/>
+  <circle cx="400" cy="500" r="10" fill="#AAAAAA"/>
+  <path d="M400,520 L400,540" stroke="#D0D0D0" stroke-width="10"/>
+  <path d="M385,540 L415,540 L415,560 L385,560 Z" fill="#D0D0D0"/>
+  
+  <!-- Product name -->
+  <text x="400" y="450" font-family="Arial" font-size="24" text-anchor="middle" fill="#333">Reflective Running Leash</text>
+  <text x="400" y="480" font-family="Arial" font-size="18" text-anchor="middle" fill="#666">Hands-free with waist attachment for active owners</text>
+</svg>
