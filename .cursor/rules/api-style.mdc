@@ -1,7 +1,7 @@
 ---
-description: generating or modifying backend code
+description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 Use best practices for express API and follow all recomendations in @docs/code-style
 
@@ -12,6 +12,8 @@ Use express for backend apis.
 They should follow restful standards when applicable 
 
 The basic folder structure should be 
+
+use shared models when applicable from /libs/models
 ```
     src/
         controllers/

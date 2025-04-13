@@ -1,7 +1,7 @@
 ---
-description: use when creating or updating angular code
+description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
  ---
 description: Angular style guidelines focusing on modern practices including standalone components, signals, and reactive forms

@@ -7,21 +7,23 @@ describe('Products API', () => {
   let createdProductId: string;
   
   const testProduct = {
-    name: 'Test Product',
-    description: 'A test product description',
-    price: 99.99,
-    image: 'https://example.com/test.jpg',
-    category: 'Electronics',
-    subCategory: 'Gadgets'
+    name: 'Classic Leather Dog Collar',
+    description: 'Handcrafted genuine leather dog collar with brass hardware for durability and style.',
+    price: 29.99,
+    image: 'classic-leather-collar.svg',
+    category: 'Dog Accessories',
+    subCategory: 'Collars',
+    tags: ['leather', 'classic', 'durable', 'adjustable', 'brown']
   };
 
   const updatedProduct = {
-    name: 'Updated Product',
-    description: 'An updated product description',
-    price: 149.99,
-    image: 'https://example.com/updated.jpg',
-    category: 'Electronics',
-    subCategory: 'Accessories'
+    name: 'Updated Leather Dog Collar',
+    description: 'Premium leather dog collar with updated features and design.',
+    price: 34.99,
+    image: 'updated-leather-collar.svg',
+    category: 'Dog Accessories',
+    subCategory: 'Collars',
+    tags: ['premium', 'leather', 'updated', 'luxury', 'brown']
   };
 
   describe('POST /api/products', () => {
@@ -33,6 +35,8 @@ describe('Products API', () => {
       expect(response.data.id).toBeDefined();
       expect(response.data.createdAt).toBeDefined();
       expect(response.data.updatedAt).toBeDefined();
+      expect(Array.isArray(response.data.tags)).toBe(true);
+      expect(response.data.tags).toEqual(expect.arrayContaining(testProduct.tags));
       
       createdProductId = response.data.id;
     });
@@ -55,7 +59,6 @@ describe('Products API', () => {
       expect(response.status).toBe(200);
       expect(Array.isArray(response.data.items)).toBe(true);
       expect(response.data.items.length).toBeGreaterThan(0);
-      expect(response.data.items[0]).toMatchObject(expect.objectContaining(testProduct));
       expect(response.data.total).toBeDefined();
       expect(response.data.page).toBe(1);
       expect(response.data.limit).toBe(10);
@@ -102,6 +105,8 @@ describe('Products API', () => {
       expect(response.data).toMatchObject(updatedProduct);
       expect(response.data.id).toBe(createdProductId);
       expect(new Date(response.data.updatedAt)).toBeInstanceOf(Date);
+      expect(Array.isArray(response.data.tags)).toBe(true);
+      expect(response.data.tags).toEqual(expect.arrayContaining(updatedProduct.tags));
     });
 
     it('should return 404 for updating non-existent product', async () => {

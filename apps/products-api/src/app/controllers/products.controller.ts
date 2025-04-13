@@ -1,17 +1,25 @@
 import { Request, Response } from 'express';
 import { Product } from '@chasing-ridges/products';
-import { ProductsService, ValidationError } from '../services/products.service';
+import { ProductsService } from '../services/products.service';
+import { ProductsRepository } from '../repositories/products.repository';
+import { ProductValidation, ValidationError } from '../validation/product.validation';
 
 export class ProductsController {
-  private productsService: ProductsService;
+  private readonly service: ProductsService;
 
   constructor() {
-    this.productsService = new ProductsService();
+    // Initialize repository and service
+    const repository = new ProductsRepository();
+    this.service = new ProductsService(repository);
   }
 
   create = async (req: Request, res: Response): Promise<void> => {
     try {
-      const product = await this.productsService.create(req.body);
+      // Validate request data
+      ProductValidation.validateCreate(req.body);
+      
+      // Delegate to service
+      const product = await this.service.create(req.body);
       res.status(201).json(product);
     } catch (error) {
       if (error instanceof ValidationError) {
@@ -25,39 +33,45 @@ export class ProductsController {
 
   findAll = async (req: Request, res: Response): Promise<void> => {
     try {
-      const page = parseInt(req.query.page as string) || 1;
-      const limit = parseInt(req.query.limit as string) || 10;
+      // Parse and validate pagination parameters
+      const page = Math.max(1, parseInt(req.query.page as string) || 1);
+      const limit = Math.max(1, parseInt(req.query.limit as string) || 10);
       
-      const result = await this.productsService.findAll(page, limit);
-      res.status(200).json(result);
+      // Delegate to service
+      const result = await this.service.findAll(page, limit);
+      res.json(result);
     } catch (error) {
       console.error('Error finding products:', error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(500).json({ message: 'Error retrieving products' });
     }
   };
 
   findOne = async (req: Request, res: Response): Promise<void> => {
     try {
-      const product = await this.productsService.findOne(req.params.id);
-      if (!product) {
+      const product = await this.service.findOne(req.params.id);
+      if (product) {
+        res.json(product);
+      } else {
         res.status(404).json({ message: 'Product not found' });
-        return;
       }
-      res.status(200).json(product);
     } catch (error) {
       console.error('Error finding product:', error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(500).json({ message: 'Error retrieving product' });
     }
   };
 
   update = async (req: Request, res: Response): Promise<void> => {
     try {
-      const product = await this.productsService.update(req.params.id, req.body);
-      if (!product) {
+      // Validate request data
+      ProductValidation.validateUpdate(req.body);
+      
+      // Delegate to service
+      const product = await this.service.update(req.params.id, req.body);
+      if (product) {
+        res.json(product);
+      } else {
         res.status(404).json({ message: 'Product not found' });
-        return;
       }
-      res.status(200).json(product);
     } catch (error) {
       if (error instanceof ValidationError) {
         res.status(400).json({ message: error.message });
@@ -70,30 +84,25 @@ export class ProductsController {
 
   delete = async (req: Request, res: Response): Promise<void> => {
     try {
-      const success = await this.productsService.delete(req.params.id);
-      if (!success) {
+      const success = await this.service.delete(req.params.id);
+      if (success) {
+        res.status(204).send();
+      } else {
         res.status(404).json({ message: 'Product not found' });
-        return;
       }
-      res.status(204).send();
     } catch (error) {
       console.error('Error deleting product:', error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(500).json({ message: 'Error deleting product' });
     }
   };
 
-  getFeatured = async (req: Request, res: Response): Promise<void> => {
+  getFeatured = async (_req: Request, res: Response): Promise<void> => {
     try {
-      console.log('getFeatured called');
-      console.log('Query params:', req.query);
-      const limit = req.query.limit ? parseInt(req.query.limit as string) : undefined;
-      console.log('Limit:', limit);
-      const products = await this.productsService.getFeatured(limit);
-      console.log('Products returned:', products);
-      res.status(200).json(products);
+      const products = await this.service.getFeatured();
+      res.json(products);
     } catch (error) {
       console.error('Error getting featured products:', error);
-      res.status(500).json({ message: 'Internal server error' });
+      res.status(500).json({ message: 'Error retrieving featured products' });
     }
   };
 } 
