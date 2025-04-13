@@ -1,0 +1,37 @@
+---
+description: generating or modifying backend code
+globs: 
+alwaysApply: false
+---
+Use best practices for express API and follow all recomendations in @docs/code-style
+
+
+
+Use express for backend apis. 
+
+They should follow restful standards when applicable 
+
+The basic folder structure should be 
+```
+    src/
+        controllers/
+            # one controller per resource ex (GET|PUT|POST|DELETE api/products) should contain operations on that 
+            # should do request validation. delegate to a specific validator if logic is complex
+            # do not implement buisness logic here; delegate to a service 
+        routes/
+            # entrypoints or available URIs. 
+            # one route file per resource and includes all HTTP verbs. 
+            # should delegate logic to controllers
+        services/
+            # buisness logic class
+            # does not directly interact with an external depenency. that is delegated to a repository
+        repository/
+            # data access layer 
+            # interface with DB or other external dependency
+    assets/
+        # contains images or fake data to be used 
+        
+    main.ts # minimal logic
+
+
+```

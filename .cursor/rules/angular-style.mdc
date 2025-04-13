@@ -9,9 +9,19 @@ globs: "**/*.{ts,html}"
 alwaysApply: true
 ---
 
-# Angular Style Guidelines
+follow angular best practices 
+
+always check the files in @docs/code-style
+https://angular.dev/overview
+https://nx.dev/reference
+[enterprise-angular-mono-repo-patterns.pdf](mdc:docs/enterprise-angular-mono-repo-patterns.pdf)
+use antd components when applicable
+
 
 ## Core Architecture
+- prefer to use ant design components instead of creating new
+- add relevant `data-testid` attributes to elements that can be interacted with
+- if components get complex use the smart container and dumb presenter pattern
 
 ### Standalone Components
 - Prefer standalone components over NgModules
@@ -19,8 +29,7 @@ alwaysApply: true
 - Import dependencies directly in components
 - Utilize standalone directives and pipes
 - prefer on push change detection
-- prefer to use ant design components instead of creating new
-- add relevant `data-testid` attributes to elements that can be interacted with
+
 
 ```typescript
 // ✅ Good
