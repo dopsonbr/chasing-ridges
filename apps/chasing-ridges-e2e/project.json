@@ -10,8 +10,7 @@
       "outputs": ["{workspaceRoot}/dist/.playwright/apps/chasing-ridges-e2e"],
       "options": {
         "config": "apps/chasing-ridges-e2e/playwright.config.ts"
-      },
-      "dependsOn": ["^serve"]
+      }
     },
     "lint": {
       "executor": "@nx/eslint:lint",
@@ -21,5 +20,5 @@
       }
     }
   },
-  "implicitDependencies": ["chasing-ridges", "products-api"]
+  "implicitDependencies": ["chasing-ridges"]
 }

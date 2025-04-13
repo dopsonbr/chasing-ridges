@@ -62,14 +62,7 @@
           "proxyConfig": "apps/chasing-ridges/proxy.conf.json"
         }
       },
-      "defaultConfiguration": "development",
-      "dependsOn": [
-        {
-          "target": "serve",
-          "projects": "products-api",
-          "params": "forward"
-        }
-      ]
+      "defaultConfiguration": "development"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
